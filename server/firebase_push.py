@@ -7,7 +7,7 @@ import hashlib
 def push(im_name):
     # Initialize Firebase with your credentials
     cred = credentials.Certificate(
-        "C:\Everything\Trash\pixeler-redbus-hackathon-firebase-adminsdk-key.json")
+        "./pixeler-redbus-hackathon-firebase-adminsdk-j2aod-58519464bb.json")
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://pixeler-redbus-hackathon-default-rtdb.firebaseio.com/'
     })
