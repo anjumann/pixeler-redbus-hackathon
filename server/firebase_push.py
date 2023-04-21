@@ -23,7 +23,7 @@ def push(im_name):
     data = {
         hashlib.sha256(im_name.encode()).hexdigest(): {
             'name': im_name,
-            'image_data': image_data.decode('latin1'),
+            'url': image_data.decode('latin1'),
         }
     }
 

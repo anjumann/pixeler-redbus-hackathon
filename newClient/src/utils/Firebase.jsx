@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
+import ImageRender from "../ImageCard";
 
 const Firebase = () => {
   const [data, setData] = React.useState();
@@ -32,9 +33,10 @@ const Firebase = () => {
   return (
     <>
       {data ? (
-        <div>
+        <div className="flex flex-wrap gap-3" >
           {data.map((item) => {
-            return <img src={item} alt="img" />;
+            return (
+                <ImageRender item={item} /> );
           })}
         </div>
       ) : (
