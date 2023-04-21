@@ -6,6 +6,9 @@ import ImageRender from "../ImageCard";
 const Firebase = () => {
   const [data, setData] = React.useState();
 
+  //intentionally left the firebase config here
+  
+
   const firebaseConfig = {
     apiKey: "AIzaSyDXIYtcCu10XMUZ7nPKUodqQV-7xNKij9U",
     authDomain: "pixeler-redbus-hackathon.firebaseapp.com",
